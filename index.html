@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Yash Tailor is a Software Developer Intern with experience in Full Stack Java technologies such as J2SE, J2EE, Hibernate, Spring, Spring MVC, SpringBoot, AJAX, and RestFul API. He is also familiar with databases such as MySql.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YASH TAILOR</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
+
+    <!-- Navigation bar -->
     <div id="header">
       <div class="container">
         <nav>
-          <img src="images/user2.jpg" alt="logo" class="logo" />
+          <img src="images/yp.png" alt="logo" class="logo" />
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -22,12 +25,63 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-      </div>
 
-      <div class="header-text">
-        <p>Java Developer</p>
-        <h1>Hi, I'm <span> YASH TAILOR </span>from Ahmedabad, India</h1>
+        <div class="header-text">
+          <h1>Hello, It's Me <br> Yash Tailor <br> And I'm a<span class = "multiple-text"></span></h1>
+        </div>
       </div>
     </div>
+
+
+    <!-- About section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+              <img src="images/1.png" alt="yash's photo">
+          </div>
+          
+          <div class="about-col-2">
+              <h1 class = "sub-tittle">About Me</h1>
+              <p><span>Yash Tailor</span> is a Software Developer Intern with experience in Full Stack Java technologies such as J2SE, J2EE, <span>Hibernate</span>, Spring, <span>Spring MVC</span>, <span>SpringBoot</span>, AJAX, and RestFul API. He is also familiar with databases such as MySql and enjoys solving Data Structure and Algorithms problems in his free time. He has worked as a <span>Full Stack Java Intern at Simform </span> and <span>Softvan Pvt Ltd </span>. During his free hours, he solves Data Structure and Algorithms problems in <span>Leetcode</span> and <span>GeeksForGeeks</span> and has also given many contests in the past few months.</p>
+
+              <div class="tab-titles">
+                <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                <p class = "tab-links" onclick="opentab('education')">Education</p>
+              </div>
+
+              <!-- Skill section -->
+              <div class="tab-contents active-tab" id = "skills">
+                <ul>
+                  <li><span>SpringBoot</span><br> Spring Boot offers a fast way to build applications</li>
+                  <li><span>MySQL</span><br>Database </li>
+                  <li><span>Data Structure and Algorithm</span> <br> Problem Solving Skills</li>
+                </ul>
+              </div>
+
+              <!-- Experience section -->
+              <div class="tab-contents" id = "experience">
+                <ul>
+                  <li><span>Feb 2023 - Present</span><br>SDE, Simform</li>
+                  <li><span>Nov 2021 - Jun 2022</span><br>Full Stack Java Intern , Softvan Pvt Ltd.</li>
+                </ul>
+              </div>
+
+              <!-- Education sections -->
+              <div class="tab-contents" id = "education">
+                <ul>
+                  <li><span>2019-2023</span><br> Gujarat Technological Univeristy, Computer Engineering</li>
+                  <li><span>2018</span><br>12th, PCM</li>
+                  <li><span>2016</span> <br>10th</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
   </body>
 </html>
