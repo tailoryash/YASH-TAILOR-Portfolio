@@ -1,13 +1,13 @@
-// var Typed = require('./typed.min.js');
-// var typed = new Typed('.multiple-text', {
-//     strings:['Java Developer', 'Software Developer Engineer Intern', 'Competitive Programmer'],
-//     typeSpeed:100,
-//     backSpeed:100,
-//     backDelay:1000,
-//     loop:true,
-// });
+//  Typed.js code
+var typed = new Typed('.multiple-text', {
+    strings:['Java Developer', 'Software Developer Engineer Intern', 'Competitive Programmer'],
+    typeSpeed:50,
+    backSpeed:50,
+    backDelay:1000,
+    loop:true,
+});
 
-
+// about me section code
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -25,4 +25,6 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab");
 }
 
+
+// -----------------------services code--------------------
 

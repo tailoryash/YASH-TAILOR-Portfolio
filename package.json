@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@coreui/icons": "^3.0.1",
+    "typed.js": "^2.0.132"
+  }
+}
