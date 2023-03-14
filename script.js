@@ -1,3 +1,16 @@
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
 //  Typed.js code
 var typed = new Typed('.multiple-text', {
     strings:['Java Developer', 'Software Developer Engineer Intern', 'Competitive Programmer'],
@@ -25,6 +38,23 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab");
 }
 
+document.getElementById("leetcode").addEventListener("mouseover", ()=>{
+    document.getElementById("leetcode").style.fill = "aqua";
+});
+document.getElementById("leetcode").addEventListener("mouseout", ()=>{
+    document.getElementById("leetcode").style.fill = "#ababab";
+});
 
-// -----------------------services code--------------------
 
+
+// -----------------------navbar code--------------------
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
