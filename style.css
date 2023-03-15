@@ -569,7 +569,11 @@ nav .fa-solid{
     #header{
         background-image: none;
         background-color: white;
-        color: black;  
+        color: black;     
+    }
+
+    .sticky > ul li a{
+        color: white;
     }
     
     .header-text{
